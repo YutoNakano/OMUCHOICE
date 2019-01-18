@@ -24,12 +24,9 @@ def index():
     location = request.form['location']
     dic_result = writeData(Scraping.extraction(search(location)))
     restaurant_name = dic_result[0]["name"]
-    print(dic_result)
-    tweets = tweet_search(location, restaurant_name)
-    tweet = tweets[0]
-    print(tweet)
+    tweets = tweet_search(location, "オムライス")
     
-    return render_template('index.html', restaurants=dic_result, tweet_contents=tweet)
+    return render_template('index.html', restaurants=dic_result, tweet_contents=tweets)
 
 
 if __name__ == '__main__':

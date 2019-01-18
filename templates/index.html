@@ -30,24 +30,29 @@
                 <h2 class="col-5 mt-15 text-danger">
                     <i class="fas fa-cocdmments text-secondary"></i>口コミ</h2>
             </div>
-            {% for name in restaurants %}
-            <div class="card" style="width: 18rem; margin: 1.5rem;">
+            <div class="row">
+                <div class="col-5">
+                    {% for name in restaurants %}
+                    <div class="card" style="width: 18rem; margin: 1.5rem;">
 
-                <img class="card-img-top" src="{{ name.img }}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">{{ name.name }}</h5>
-                    <a href="{{ name.restaurant }}" class="btn btn-warning">詳細を見る</a>
+                        <img class="card-img-top" src="{{ name.img }}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ name.name }}</h5>
+                            <a href="{{ name.restaurant }}" class="btn btn-warning">詳細を見る</a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="col-7">
+                    <aside>
+                        {% for tweet_content in tweet_contents %}
+                        <div class="Twitter_userName">{{ tweet_content.userName }}</div>
+                        <div class="Twitter_time">{{ tweet_content.time }}</div>
+                        <div class="Twitter_tweet">{{ tweet_content.tweet }}</div>
+                        {% endfor %}
+
                 </div>
             </div>
-            {% endfor %}
-
-            <aside>
-                {{ tweet_content }} {% for tweet_content in tweet_contents %}
-                <div class="Twitter_userName">{{ tweet_content.userName }}</div>
-                <div class="Twitter_time">{{ tweet_content.time }}</div>
-                <div class="Twitter_tweet">{{ tweet_content.tweet }}</div>
-                {% endfor %}
-            </aside>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
