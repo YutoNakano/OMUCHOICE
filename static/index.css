@@ -3,7 +3,13 @@ body {
     background-color: rgb(255, 240, 191)
 }
 
-h1 {
-    border-bottom: solid 3px #87CEFA
+.Teitter_userName {
+    padding-top: 1rem;
+}
+
+.Twitter_tweet {
+
+    line-height: 3
 
 }
+
