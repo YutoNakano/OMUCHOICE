@@ -25,10 +25,11 @@
         </form>
         <div class="container">
             <div class="row">
-                <h2 class="col-5 mt-15 text-danger">
+
+                <h2 class="col-5 mt-15 text-secondary">
                     <i class="fas fa-utensils text-secondary"></i>レストラン</h2>
-                <h2 class="col-5 mt-15 text-danger">
-                    <i class="fas fa-cocdmments text-secondary"></i>口コミ</h2>
+                <h2 class="col-5 mt-15 text-secondary">
+                    <i class="fas fa-comments text-secondary"></i>口コミ</h2>
             </div>
             <div class="row">
                 <div class="col-5">
@@ -44,12 +45,13 @@
                     {% endfor %}
                 </div>
                 <div class="col-7">
-                    <aside>
-                        {% for tweet_content in tweet_contents %}
-                        <div class="Twitter_userName">{{ tweet_content.userName }}</div>
-                        <div class="Twitter_time">{{ tweet_content.time }}</div>
-                        <div class="Twitter_tweet">{{ tweet_content.tweet }}</div>
-                        {% endfor %}
+
+                    {% for tweet_content in tweet_contents %}
+                    <div class="Twitter_userName">{{ tweet_content.userName }}</div>
+                    <div class="Twitter_time">{{ tweet_content.time }}</div>
+                    <div class="Twitter_tweet">{{ tweet_content.tweet }}</div>
+                    <div class="point">--------------------------------------</div>
+                    {% endfor %}
 
                 </div>
             </div>
