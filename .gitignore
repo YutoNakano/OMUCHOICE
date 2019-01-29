@@ -1,1 +1,4 @@
-OMUCHICE/
+OMUCHICE
+.vscode 
+.ipynb_checkpoints
+__pycache__

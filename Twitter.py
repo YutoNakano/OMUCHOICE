@@ -12,8 +12,6 @@ api = tweepy.API(auth)
 def tweet_search(location, restaurant_name):
     tweet_list = []
     searchWord = [location, restaurant_name]  # 検索ワード複数
-    print(location)
-    print(restaurant_name)
     for status in api.search(
             q=searchWord, lang='ja', result_type='recent',
             count=10):  # result_type は recent or popular or mixed
@@ -32,5 +30,5 @@ def tweet_search(location, restaurant_name):
             "tweet": tweet
         }
         tweet_list.append(tweet_dic)
-    print(tweet_list)
+   
     return tweet_list
