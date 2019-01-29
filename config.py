@@ -13,11 +13,11 @@ from boto.s3.connection import S3Connection
 
 # S3 = S3Connection(os.environ['CONSUMER_KEY'],os.environ['CONSUMER_SECRET'],os.environ['ACCESS_TOKEN'],os.environ['ACCESS_TOKEN_SECRET'],os.environ['ACCESS_KEY'])
 
-CONSUMER_KEY = os.environ.get("CONSUMER_KEY")
-CONSUMER_SECRET = os.environ.get("CONSUMER_SECRET")
-ACCESS_TOKEN = os.environ.get("ACCESS_TOKEN")
-ACCESS_TOKEN_SECRET = os.environ.get("ACCESS_TOKEN_SECRET")
-ACCESS_KEY=os.environ.get("ACCESS_KEY")
+CONSUMER_KEY = os.environ["CONSUMER_KEY"]
+CONSUMER_SECRET = os.environ["CONSUMER_SECRET"]
+ACCESS_TOKEN = os.environ["ACCESS_TOKEN"]
+ACCESS_TOKEN_SECRET = os.environ["ACCESS_TOKEN_SECRET"]
+ACCESS_KEY=os.environ["ACCESS_KEY"]
 
 # print(S3)
 def getConsumerKey():
