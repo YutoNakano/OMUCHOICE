@@ -19,7 +19,7 @@ ACCESS_TOKEN = os.environ.get("ACCESS_TOKEN")
 ACCESS_TOKEN_SECRET = os.environ.get("ACCESS_TOKEN_SECRET")
 ACCESS_KEY=os.environ.get("ACCESS_KEY")
 
-print(S3)
+# print(S3)
 def getConsumerKey():
     return CONSUMER_KEY
 
