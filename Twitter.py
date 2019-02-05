@@ -1,3 +1,7 @@
+1
+2
+3
+# coding: utf-8
 import datetime
 import requests
 import tweepy

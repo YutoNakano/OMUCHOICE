@@ -1,1 +1,1 @@
-web: gunicorn omelette:app --log-file -
+web: gunicorn omelette:app --preload

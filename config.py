@@ -1,3 +1,7 @@
+1
+2
+3
+# coding: utf-8
 import os
 from dotenv import load_dotenv
 from boto.s3.connection import S3Connection
@@ -17,7 +21,7 @@ CONSUMER_KEY = os.environ["CONSUMER_KEY"]
 CONSUMER_SECRET = os.environ["CONSUMER_SECRET"]
 ACCESS_TOKEN = os.environ["ACCESS_TOKEN"]
 ACCESS_TOKEN_SECRET = os.environ["ACCESS_TOKEN_SECRET"]
-ACCESS_KEY=os.environ["ACCESS_KEY"]
+# ACCESS_KEY=os.environ["ACCESS_KEY"]
 
 # print(S3)
 def getConsumerKey():
@@ -34,3 +38,4 @@ def getAccessToken():
 
 def getAccessSecret():
     return ACCESS_TOKEN_SECRET
+
